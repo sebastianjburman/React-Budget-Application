@@ -1,0 +1,37 @@
+.sideNavbarNavigatorBtnContainer{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+/*Change color of buttons text when hovered*/
+.sideNavbarNavigatorBtnContainer:hover > p{
+    color: var(--background-Color)
+}
+/*Change color of buttons svg when hovered*/
+.sideNavbarNavigatorBtnContainer:hover > button > div > svg{
+    fill: var(--background-Color);
+}
+/*Change color of button background when hovered*/
+.sideNavbarNavigatorBtnContainer:hover{
+    background-color: var(--text-Color);
+}
+/*Container for buttons svg */
+.sideNavbarNavigatorBtnContainer button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+.sideNavbarNavigatorBtnContainer p{
+    color: var(--text-Color);
+    width: 90px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+

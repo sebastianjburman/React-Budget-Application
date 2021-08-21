@@ -1,0 +1,57 @@
+.transactionPageCardContainer{
+    height:500px;
+    width: 95%;
+    border-radius: 10px;
+    background-color: var(--component-Background);
+    margin-top: 20px;
+}
+
+/*When screen goes out of mobile view*/
+@media only screen and (min-width: 769px){
+    .transactionPageCardContainer{
+        /*Stop transactionPageCardContainer from growing*/
+        max-width: 600px;
+        height: 500px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+.accountNameH2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 10%;
+    font-size: 1.2rem;
+    color: var(--text-Color);
+}
+
+.transactionPageCardTransactionsContainer{
+    height: 90%;
+    width: 100%;
+    margin: 0px;
+    overflow-y: scroll;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.transactionPageCardTransactionsContainer h1{
+    color: var(--text-Color);
+    text-align: center;
+}
+
+/*When screen width get below 350px*/
+@media only screen and (max-width: 350px){
+    .accountNameH2{
+       font-size: .8rem;
+    }
+}

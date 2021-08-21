@@ -1,0 +1,27 @@
+.topNavbarContainer{
+    display: flex;
+    align-items: center;
+    background-color: var(--navBarBackground);
+    width: 100%;
+    height: 65px;
+}
+.topNavbarSvgContainer {
+    pointer-events: none;
+}
+.topNavbarSvg{
+    fill: var(--text-Color);
+    width: 40px;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.topNavbarHeader{
+    color: var(--text-Color);
+    font-size: 1.7rem; 
+}
+/*When screen width get below 350px*/
+@media only screen and (max-width: 350px){
+    .topNavbarHeader{
+        font-size: 1.4rem;
+    } 
+}

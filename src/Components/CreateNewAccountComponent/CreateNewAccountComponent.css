@@ -1,0 +1,86 @@
+.createNewAccountComponentContainer{
+    height:500px;
+    width: 95%;
+    border-radius: 10px;
+    background-color: var(--component-Background);
+    margin-top: 20px;
+}
+
+/*When going out of mobile view*/
+@media only screen and (min-width: 769px){
+    .createNewAccountComponentContainer{
+        /*Stop newAccountFrom from growing*/
+        max-width: 600px;
+        height: 500px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.createNewAccountHeader{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-Color);
+}
+
+.createNewAccountFormContainer{
+   width: 100%;
+   height: 60%;
+   
+}
+
+.createNewAccountFormLeftSide{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.createNewAccountFormLeftSide label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 80%;
+    font-size: 1.4rem;
+    color: var(--text-Color);
+}
+
+.createNewAccountFormLeftSide input{
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.7rem;
+}
+
+.createNewAccountBtnContainer{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createNewAccountBtnContainer button{
+    width: 220px;
+    height: 60px;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 6px;
+    background-color: green;
+    transition: all ease .2s;
+    color: white;
+}
+.createNewAccountBtnContainer button:hover{
+    opacity: .40;
+}
+
+/*When screen width get below 350px*/
+@media only screen and (max-width: 350px){
+    
+}

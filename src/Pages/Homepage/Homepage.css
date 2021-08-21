@@ -1,0 +1,41 @@
+.homePageContainer {   
+    width: 100%;
+    position: relative;
+    height: calc(100% - 65px - 80px);
+    overflow-y: scroll;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; 
+    background-color: var(--background-Color);
+}
+
+.barGraphContainer{
+    width: 95%;
+    height: 400px;
+    margin-top: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: var(--component-Background);
+}
+
+
+/*When screen goes out of mobile view*/
+@media only screen and (min-width: 769px){
+    /*Extent homepage to fill empty space after bottom nav is gone*/
+    .homePageContainer{
+        height: calc(100% - 65px);
+        left: 80px;
+        width: calc(100% - 80px);
+        justify-content: space-evenly;
+    }
+    /*Stop barGraph container from growing*/
+    .barGraphContainer{
+        max-width: 600px;
+        height: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+

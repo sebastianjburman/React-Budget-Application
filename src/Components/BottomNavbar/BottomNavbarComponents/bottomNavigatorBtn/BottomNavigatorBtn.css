@@ -1,0 +1,57 @@
+.bottomNavigatorBtnContainer{
+    width: 25%;
+    height: 100%;
+}
+.bottomNavigatorBtnContainerNotHighlighted{
+    width: 100%;
+    height: 100%;  
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--navBarBackground);
+    flex-direction: column;
+    align-items: center;
+    transition: all ease 1s, background-color 0ms;
+}
+.bottomNavigatorBtnContainerButtonHighlighted{
+     width: 100%;
+    height: 100%;  
+    border: none;
+    display: flex;
+    background-color: var(--component-Color-Two);
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease 1s, background-color 0ms;
+}
+
+
+.btnSvgContainer{
+    width: 40%;
+    height: 40%;
+}
+
+.bottomNavigatorBtnContainer svg{
+    width: 100%;
+    height: 100%;
+    fill: var(--text-Color);
+}
+
+
+.bottomNavigatorBtnContainer h4{
+    color: var(--text-Color);
+    height: 66%;
+    margin: 0px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*When screen width get below 350px*/
+@media only screen and (max-width: 350px){
+    .bottomNavigatorBtnContainer h4{
+        font-size: .6rem;
+    }
+}

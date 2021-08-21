@@ -1,0 +1,75 @@
+.recentTransactionContainer{
+    width: 95%;
+    height: 25%;
+    min-height: 25%;
+    display: flex;
+    margin-top: 5px;
+    border-radius: 6px;
+    background-color: var(--component-Color-One);
+    align-items: center;
+}
+
+.recentTransactionImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60px;
+    min-width: 60px;
+}
+.recentTransactionImg svg{
+    fill: var(--text-Color);
+}
+
+.recentTransactionInfoCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 130px;
+}
+.recentTransactionInfoCon h5{
+    margin: 0;
+    font-size: .8rem;
+    width: 100%;
+    text-align: center;
+    color: var(--text-Color);
+}
+
+.recentTransactionInfoCon p {
+    margin: 0;
+    color: var(--text-Color);
+}
+
+
+.recentTransactionPrice{
+    margin: 0px;
+    margin-left: auto;
+    margin-right: 10px;
+    color: var(--text-Color);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 45%;
+    min-width:45%;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+/*When screen width get below 350px*/
+@media only screen and (max-width: 350px){
+    .recentTransactionImg{
+        width: 45px;
+        min-width: 45px
+    }
+    .recentTransactionInfoCon h5{
+    font-size: .8rem;
+    }
+    .recentTransactionInfoCon p{
+    font-size: .8rem;
+    }
+    .recentTransactionPrice{
+        font-size: .8rem;
+    }
+}
+    

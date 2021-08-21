@@ -1,0 +1,101 @@
+.transactionCompContainer{
+    width: 95%;
+    height: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    background-color: var(--component-Color-One);
+}
+
+
+.transactionCompImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60px;
+    min-width: 60px;
+}
+.transactionCompImg svg{
+    fill: var(--text-Color);
+}
+
+.transactionCompInfoCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin-right: 30px;
+}
+.transactionCompInfoCon h5{
+    margin: 0;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    color: var(text-Color);
+}
+
+.transactionCompInfoCon p {
+    margin: 0;
+    color: var(--text-Color);
+}
+
+.transactionCompPrice{
+    margin: 0px;
+    margin-left: auto;
+    margin-right: 10px;
+    color: var(--text-Color);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 35%;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.deleteTransactionBtn{
+    height: 100%;
+    width: 50px;
+    min-width: 50px;
+    background-color: transparent;
+    border: none;
+}
+.deleteTransactionBtn div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.deleteSvg{
+    fill: tomato;
+    height: 100%;
+    width: 100%;
+}
+.deleteSvg:hover{
+    fill: rgb(248, 140, 121);
+}
+
+
+/*When screen width get below 350px*/
+@media only screen and (max-width: 350px){
+    .transactionCompImg{
+        width: 40px;
+        min-width: 40px;
+    }
+    .transactionCompInfoCon h5{
+        font-size: .8rem;
+    }
+    .transactionCompInfoCon p{
+        font-size: .1rem;
+    }
+    .transactionCompPrice {
+        font-size: .8rem;
+    }
+    .deleteTransactionBtn{
+        width: 35px;
+        min-width: 35px;
+    }
+}
+

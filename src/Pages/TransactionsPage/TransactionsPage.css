@@ -1,0 +1,23 @@
+.transactionsPageContainer{
+    width: 100%;
+    position: relative;
+    height: calc(100% - 65px - 80px);
+    overflow-y: scroll;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;  
+    background-color: var(--background-Color);
+}
+
+/*When screen goes out of mobile view*/
+@media only screen and (min-width: 769px){
+    /*Extent transactions page to fill empty space after bottom nav is gone*/
+    .transactionsPageContainer{
+        height: calc(100% - 65px);
+        left: 80px;
+        width: calc(100% - 80px);
+        justify-content: space-evenly;
+    }
+}

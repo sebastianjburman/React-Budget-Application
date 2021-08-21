@@ -1,0 +1,51 @@
+.recentTransactionCardContainer{
+    width: 95%;
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--component-Background);
+}
+/*When screen goes out of mobile view*/
+@media only screen and (min-width: 769px){
+    /*Stop recentTransactionCardContainer from growing*/
+    .recentTransactionCardContainer{
+        max-width: 600px;
+        height: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+/*When screen width get below 350px*/
+@media only screen and (max-width: 350px){
+    .recentTransactionCardContainer h2{
+        font-size: 1.1rem;
+    }
+}
+
+.recentTransactionCardContainer h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    margin: 0;
+    color: var(--text-Color);
+}
+
+.recentTransactionsContainer{
+    height: 82%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.recentTransactionsContainer h1{
+    color: var(--text-Color);
+    text-align: center;
+}
+
+.recentTransactionSvg{
+    width: 70%;
+    height: 70%;
+}

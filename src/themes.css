@@ -1,0 +1,9 @@
+/*Default theme values*/
+:root {
+  --background-Color: rgb(255, 255, 255);
+  --text-Color: black;
+  --navBarBackground:#e3e3e3;
+  --component-Background: #d1d1d1;
+  --component-Color-One: #e0e0e0;
+  --component-Color-Two: #dbdbdb;
+}

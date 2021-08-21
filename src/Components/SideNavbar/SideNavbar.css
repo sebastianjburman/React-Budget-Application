@@ -1,0 +1,65 @@
+/*Side navbar class when its not popped out*/
+.sideNavbarContainer{
+  position: absolute;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  top: 65px;
+  height: calc(100% - 65px);
+  width: 80px;
+  background-color: var(--navBarBackground);
+  transition: all  0.5s ease, background-color 0ms;
+}
+/*Side navbar class its popped out*/
+.sideNavbarContainerOut{
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 65px;
+  transition: all  0.5s ease, background-color 0ms;
+  height: calc(100% - 65px);
+  width: 250px;
+  background-color: var(--navBarBackground);
+}
+
+/*When screen goes out of mobile view to desktop view*/
+@media only screen and (min-width: 769px){
+    /*Show side navbar for desktop view*/
+    .sideNavbarContainer{
+        display: flex;
+    }
+    /*Show side navbar for desktop view*/
+    .sideNavbarContainerOut{
+      display: flex;
+    }
+}
+
+
+/*All svg fill color on sideNavbar*/
+.sideNavSvgs{
+  fill: var(--text-Color);
+}
+
+/*Button pop out sideNavbar */
+.openSideNavBtn{
+  background-color: transparent;
+  height: 35px;
+  border: none;
+  margin-bottom: 15px;
+}
+.openSideNavBtn:hover{
+  background-color: var(--text-Color);
+  border-radius: 10px;
+}
+/*Change buttons svg color on hover */
+.openSideNavBtn:hover > div > svg{
+  fill: var(--background-Color);
+}
+
+
+
+
+
+
+
